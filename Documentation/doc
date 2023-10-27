@@ -1,6 +1,6 @@
-<b>Test Cases for the API:</b>
+Test Cases for the API:
 
-<b>Retrieve Translations Endpoint:<b>
+* Retrieve Translations Endpoint:
 
 Positive Test Case 1:
 Description: Test retrieval of a valid translation.
@@ -12,7 +12,7 @@ Description: Test retrieval with an invalid word.
 Input: Word="invalidword," Target Language="es"
 Expected Output: 400 Bad Request
   
-<b>Add New Translations Endpoint:</b>
+* Add New Translations Endpoint:
 
 Positive Test Case 1:
 Description: Test addition of a valid translation.
@@ -24,7 +24,7 @@ Description: Test addition with missing required fields.
 Input: Missing translation data
 Expected Output: 400 Bad Request
   
-<b>Update Existing Translations Endpoint:</b>
+* Update Existing Translations Endpoint:
 
 Positive Test Case 1:
 Description: Test update of an existing translation.
@@ -36,7 +36,7 @@ Description: Test update of a non-existent translation.
 Input: Translation ID=999, Updated Translation="new translation"
 Expected Output: 404 Not Found
   
-<b>Delete Translations Endpoint:</b>
+* Delete Translations Endpoint:
 
 Positive Test Case 1:
 Description: Test deletion of an existing translation.
@@ -48,9 +48,11 @@ Description: Test deletion of a non-existent translation.
 Input: Translation ID=999
 Expected Output: 404 Not Found
 
-<b> Test Cases for the Chrome Extension </b>
 
-<b> Word Capture: </b>
+
+* Test Cases for the Chrome Extension * 
+
+* Word Capture: 
 
 Positive Test Case 1:
 Description: Test word capture when a word is selected.
@@ -60,7 +62,7 @@ Negative Test Case 1:
 Description: Test word capture when no word is selected.
 Expected Output: Popup displays a message indicating no word is selected.
   
-<b> Translation: </b>
+* Translation: 
 
 Positive Test Case 1:
 Description: Test translation of a selected word.
@@ -71,10 +73,9 @@ Description: Test translation when no word is selected.
 Expected Output: Popup displays an error message.
 
   
-<b> Summary of Test Results: </b>
+
+Summary of Test Results: 
 
 For the API, all positive test cases passed, and the API correctly handled invalid inputs in the negative test cases. Proper status codes were returned, and error messages were accurate.
-
 For the Chrome extension, positive test cases related to word capture and translation functionality passed as expected. The extension appropriately handled scenarios when no word was selected. The negative test cases, especially those related to handling error conditions, also passed as expected.
-
 These test cases ensure that the API and Chrome extension function correctly in various scenarios, and they are prepared to handle both positive and negative cases gracefully.

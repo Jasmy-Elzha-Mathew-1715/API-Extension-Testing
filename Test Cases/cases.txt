@@ -39,3 +39,29 @@ Test Case 8: Translation ID Not Found
 
 Input: Send a DELETE request to the /translations/{id} endpoint with an invalid translation ID.
 Expected Output: Receive a 404 Not Found response with an error message.
+
+<b> Chrome Extension Test Cases </b>
+
+<b>Word Capture:</b>
+
+Test Case 1: Select Word
+Action: Open the extension, select a word on a webpage.
+Expected Result: The selected word is displayed in the extension's popup.
+
+Test Case 2: No Word Selected
+Action: Open the extension, do not select any word.
+Expected Result: The popup displays a message indicating no word is selected.
+
+<b>Translation:</b>
+
+Test Case 1: Successful Translation
+Action: Open the extension, select a word, and click the "Translate" button.
+Expected Result: The extension sends a request to the API, receives a valid translation, and displays it in the popup.
+
+Test Case 2: No Translation Available
+Action: Open the extension, select a word, and click the "Translate" button.
+Expected Result: The extension sends a request to the API, receives a response indicating that no translation is available, and displays an appropriate message in the popup.
+
+Test Case 3: API Request Failure
+Action: Open the extension, select a word, and click the "Translate" button, causing an API request to fail.
+Expected Result: The extension handles the error, displays an error message in the popup, and logs the error to the browser's console.

@@ -1,11 +1,11 @@
 # API-Extension-Testing
 Test cases to cover the operations of the API endpoints and the basic functionalities of the extension.
 
-Install Mocha and testing library Chai.
+<ul> Install Mocha and testing library Chai.</ul>
 <p> <b>npm install mocha chai --save-dev </b></p>
 
- Install tool like web-ext for headless Firefox testing.
-  npm install -g web-ext
+<ul> Install tool like web-ext for headless Firefox testing.</ul>
+<p> <b> npm install -g web-ext </b> </p>
 
- Execute Mocha:
- <strong> mocha api.test.js </strong>
+<ul> Execute Mocha:</ul>
+ <p><b> mocha api.test.js </b></p>

@@ -1,0 +1,41 @@
+<b>API Endpoint Test Cases:</b>
+  
+Test Case 1: Valid Translation Request
+
+Input: Send a GET request to the /translations endpoint with a valid word and target language.
+Expected Output: Receive a 200 OK response with the translation.
+  
+Test Case 2: Invalid Translation Request
+
+Input: Send a GET request to the /translations endpoint with an invalid word or target language.
+Expected Output: Receive a 400 Bad Request response with an error message.
+
+Test Case 3: Valid Translation Addition
+
+Input: Send a POST request to the /translations endpoint with valid data (word, source language, target language, and translation).
+Expected Output: Receive a 201 Created response with a success message.
+  
+Test Case 4: Missing Required Fields
+
+Input: Send a POST request to the /translations endpoint with missing required fields.
+Expected Output: Receive a 400 Bad Request response with an error message.
+
+Test Case 5: Valid Translation Update
+
+Input: Send a PUT request to the /translations/{id} endpoint with a valid translation ID and updated translation data.
+Expected Output: Receive a 200 OK response with a success message.
+  
+Test Case 6: Translation ID Not Found
+
+Input: Send a PUT request to the /translations/{id} endpoint with an invalid translation ID.
+Expected Output: Receive a 404 Not Found response with an error message.
+
+Test Case 7: Valid Translation Deletion
+
+Input: Send a DELETE request to the /translations/{id} endpoint with a valid translation ID.
+Expected Output: Receive a 204 No Content response, indicating successful deletion.
+
+Test Case 8: Translation ID Not Found
+
+Input: Send a DELETE request to the /translations/{id} endpoint with an invalid translation ID.
+Expected Output: Receive a 404 Not Found response with an error message.
